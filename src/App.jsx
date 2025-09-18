@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Phone, Mail, Home, Droplet, Building2, Trees, ShieldCheck } from "lucide-react";
+import Logo from './assets/logo.png';
 
 export default function App() {
   const [activeService, setActiveService] = useState(null);
@@ -52,8 +53,10 @@ export default function App() {
   return (
     <div className="font-sans text-gray-800 w-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 w-full bg-blue-700 text-white z-50 shadow-lg flex justify-between items-center px-6 py-4">
-        <div className="text-xl font-bold">Spring Clean Exteriors</div>
+      <nav className="fixed top-0 left-0 w-full bg-blue-700 text-white z-50 shadow-lg flex justify-between items-center px-6 py-0">
+        <div className="text-xl font-bold">
+          <img src={Logo} alt="Logo" className="w-20 h-20" />
+        </div>
         <div className="space-x-6 hidden md:flex">
           <a href="#about" className="hover:text-gray-200">About Us</a>
           <a href="#services" className="hover:text-gray-200">Services</a>
