@@ -59,7 +59,7 @@ export default function App() {
   } 
 
   return (
-    <div className="font-sans text-gray-800 w-screen">
+    <div className="font-sans text-gray-800 ">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full bg-blue-700 text-white z-50 shadow-lg px-4 sm:px-6">
         <div className="flex justify-between items-center h-20 max-w-screen-xl mx-auto">
